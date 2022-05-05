@@ -14,5 +14,5 @@ draft: false
 
 ## 版权申明
 
-本博客所有文章，若非特殊申明，均采用[署名-非商业性使用-相同方式共享 4.0
-国际](https://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
+本博客所有文章，若非特殊申明，均采用 「[署名-非商业性使用-相同方式共享 4.0
+国际](https://creativecommons.org/licenses/by-nc-sa/4.0/)」 进行许可。
