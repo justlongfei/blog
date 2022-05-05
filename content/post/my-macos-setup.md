@@ -78,6 +78,7 @@ PS. 安装软件的过程时间较长，可以选择跳过，等到用的时候�
 | alacritty          | terminal替代，据说性能好 | https://github.com/alacritty/alacritty                       |    *     |
 | tmux               | terminal分屏             | https://github.com/tmux/tmux/wiki                            |    *     |
 | Alfred4            | finder替代品             | https://www.alfredapp.com/                                   |    *     |
+| raycast          | finder替代 | https://www.raycast.com/                       |        |
 | visual-studio-code | 编辑器，maybe IDE        | https://code.visualstudio.com/                               |    *     |
 | wechat             | 微信                     | https://weixin.qq.com/                                       |          |
 | 企业微信           | 工作使用                 | https://work.weixin.qq.com/                                  |          |
@@ -96,6 +97,8 @@ PS. 安装软件的过程时间较长，可以选择跳过，等到用的时候�
 | obsidian           | 知识库                   | https://obsidian.md/                                         |    *     |
 | PicGo              | 图床管理                 | https://molunerfinn.com/PicGo/                               |    *     |
 | XMind              | 思维导图工具             | https://www.xmind.cn/                                        |          |
+| fliqlo              | 时钟锁屏             | https://fliqlo.com/                                        |          |
+| RectangleApp              | macos开源窗口管理器 | https://github.com/rxhanson/Rectangle/                                        |          |
 
 ### ✨ chrome插件
 
@@ -115,6 +118,7 @@ chrome插件通过google账号同步。
 | -------------- | ------------------------------------------------------------ | --------------------------------------- | :------: |
 | fira code      | https://github.com/tonsky/FiraCode                           | brew install --cask font-fira-code      |    *     |
 | JetBrains Mono | https://www.jetbrains.com/lp/mono/<br />https://github.com/JetBrains/JetBrainsMono | brew install --cask font-jetbrains-mono |          |
+| LXGW WenKai | https://github.com/lxgw/LxgwWenKai/ | brew install font-lxgw-wenkai |          |
 
 ## 🎙️ 总结
 
