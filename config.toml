@@ -3,13 +3,13 @@
 # https://gohugo.io/getting-started/configuration #
 ###################################################
 
-baseURL = "https://blog.dragonfly.run" # website root path
+baseURL = "https://blog.dragonfly.run/" # website root path
 disqusShortname = ""               # disqus shortcode
 enableGitInfo = false              # retrieve last modified date from git commits
 enableRobotsTXT = true             # /robots.txt
 googleAnalytics = ""               # google analytics id
 hasCJKLanguage = true              # Chinese/Japanese/Korean
-languageCode = "en"                # content language
+languageCode = "en-us"                # content language
 paginate = 5                       # number of posts each page
 rssLimit = 10                      # maximum items in rss feeds
 theme = "hugo-theme-texify"        # theme directory name
