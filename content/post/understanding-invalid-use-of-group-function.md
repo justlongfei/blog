@@ -247,3 +247,7 @@ SELECT t1.a FROM t1 GROUP BY t1.a HAVING t1.a IN
 - base_query_block：聚合函数所在的 query block。聚合函数的成员变量，在 init_sum_func_check 的时候，将当前 query block 赋值给 base_query_block。
 	
 - aggr_query_block：聚合函数被计算的 query block。同为聚合函数的成员变量，在 check_sum_func 函数中，根据前文中介绍的规则，将其计算出来。
+
+<br>
+
+<center>  ·End·  </center>
