@@ -60,7 +60,7 @@ ssh-keygen -t ed25519 -C "mymbp@home"
 
 ## 📃 配置工作环境
 
-我将平时经常使用的软件，命令行工具以及其配置维护在我个人的[dotfiles](git@github.com:oops-lgtm/dotfiles.git)仓库中。可以参考[Install](https://github.com/oops-lgtm/dotfiles#install)一节进行安装。
+我将平时经常使用的软件，命令行工具以及其配置维护在我个人的[dotfiles](https://github.com/justlongfei/dotfiles)仓库中。可以参考[Install](https://github.com/justlongfei/dotfiles#install)一节进行安装。
 
 在终端配置了代理的情况下，安装脚本会提示是否使用`Brewfile`来安装软件，一般在拿到新系统的时候，我都会选择`y`(es)。
 PS. 安装软件的过程时间较长，可以选择跳过，等到用的时候在进行安装。
