@@ -18,6 +18,16 @@ strong {
   padding: .3rem 1.2rem .2rem 1rem;
 }
 
+#main {
+  border-style: outset;
+  background-color: white;
+  margin-top: 16pt;
+  padding-left: 32pt;
+  padding-right: 32pt;
+}
+
 #wrapper {
-  font-family: 'LXGW WenKai', "Times New Roman", serif
+  font-family: 'LXGW WenKai', "Times New Roman", serif;
+  background-image: url("img/squairy_light.png") !important;
+  background-repeat: repeat !important;
 }
