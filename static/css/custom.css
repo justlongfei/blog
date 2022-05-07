@@ -25,10 +25,33 @@ strong {
   margin-top: 16pt;
   padding-left: 32pt;
   padding-right: 32pt;
+  margin-bottom: 16pt;
+}
+
+/* header */
+#header {
+  background-color: white;
+  min-height: 32pt;
+  justify-content: center;
+}
+
+#footer {
+  background-color: black;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link_black {
+  color: silver;
 }
 
 #wrapper {
   font-family: 'LXGW WenKai', "Times New Roman", serif;
-  background-image: url("img/squairy_light.png") !important;
-  background-repeat: repeat !important;
+  background-color: gainsboro;
+  padding: 0;
 }
