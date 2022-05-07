@@ -28,6 +28,10 @@ strong {
   margin-bottom: 16pt;
 }
 
+#main .toc  {
+  border-style: none;
+}
+
 /* header */
 #header {
   background-color: white;
