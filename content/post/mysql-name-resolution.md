@@ -138,7 +138,7 @@ tags: ["Database", "mysql"]
     - 子查询会增加 query block 的嵌套深度
     
 - TableList 和 SQLIList 双剑合璧  
-    TableList 是 from 子句中指定的表引用，其中保存重要的信息包括：库名，表名，别名等重要信息。每个 query block 中涉及到的表，都会以 TableList 的形式保存到链表上。SQLIList 是一个链表的辅助结构体，其包含一个指向下一个将要插入节点位置的二维指针，类型为 `**TableList`， 通过 SQLIList 可以快速的在链表尾部进行插入操作。  
+    TableList 是 from 子句中指定的表引用，其中保存重要的信息包括：库名，表名，别名等重要信息。每个 query block 中涉及到的表，都会以 TableList 的形式保存到链表上。SQLIList 是一个链表的辅助结构体，其包含一个指向下一个将要插入节点位置的二维指针，类型为 `*TableList`， 通过 SQLIList 可以快速的在链表尾部进行插入操作。  
     SQLIList 插入节点如下所示：  
     1. 初始状态时 first 置空，next 指向 first
     2. 将 *next 指向要插入的元素（对于插入头一个元素，next指向first）

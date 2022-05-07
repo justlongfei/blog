@@ -1,5 +1,23 @@
 @import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.6.0/style.css');
 
+* {
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: normal;
+  text-emphasis-style: dot;
+  text-emphasis-position: under;
+  -webkit-text-emphasis-style: dot;
+  -webkit-text-emphasis-position: under; 
+}
+
+.content blockquote {
+  border-left: black 4px solid;
+  font-style: italic;
+  padding: .3rem 1.2rem .2rem 1rem;
+}
+
 #wrapper {
-    font-family: 'LXGW WenKai', "Times New Roman", serif
+  font-family: 'LXGW WenKai', "Times New Roman", serif
 }

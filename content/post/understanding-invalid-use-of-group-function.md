@@ -122,16 +122,14 @@ SELECT t1.a FROM t1 GROUP BY t1.a HAVING t1.a IN
 
 本节介绍 mysql 判断聚合函数合法性的实现细节，可以帮助您更好的理解 mysql 的源代码。
 
--   **base_query_block**：
-    
+-   base_query_block：
     聚合函数出现的 query block
     
--   **aggr_query_block**：
-    
+-   aggr_query_block：
     聚合函数应当被计算的 query block
     
--   **max_aggr_level**：  
-    记录聚合函数中涉及到的「未绑定列引用」所在的最深的 query block（也就是前文中提到的 **Q** ）的嵌套层次。嵌套 level 越大，query block 越深。  
+-   max_aggr_level：  
+    记录聚合函数中涉及到的「未绑定列引用」所在的最深的 query block（也就是前文中提到的 Q ）的嵌套层次。嵌套 level 越大，query block 越深。  
     啥是未绑定列引用（unbound column references）？
     
     -   如果聚合函数中的列引用没被绑定到任何该聚合函数中的子查询上，那么该列引用就是「未绑定列引用」
@@ -168,17 +166,17 @@ SELECT t1.a FROM t1 GROUP BY t1.a HAVING t1.a IN
         avg的max_aggr_level为0。t1.a是未绑定列引用，其对应的level为0，而t2.c是绑定的列引用，所以是不纳入考虑范围的。  
         **如果聚合函数不包含任何列引用，如count(*)，那么它的max_aggr_level为-1。**
     
--   **max_sum_func_level**：  
+-   max_sum_func_level：  
     如果一个聚合函数作为子表达式成为了另外一个聚合函数的参数，并且它又并不是在外层聚合函数中的某个子查询中进行计算的，那么 max_sum_func_level 则记录着此聚合函数的最大嵌套层次。  
     这个变量的含义是记录聚合函数子聚合函数的计算 level 的最大值。  
     假定有两个聚合函数 s0 和 s1，s1 是 s0 的参数中的子表达式，只有当 s1 并非是在 s0 中的某个子查询中计算得到的，才可以将 s1 和 s0 看作是嵌套的聚合函数。如 `AVG(SUM(t1.b))` 是嵌套聚合，而 `AVG(t1.a+(SELECT MIN(t2.c) FROM t2))` 则不是嵌套聚合。  
     上文中提到，嵌套聚合并不一定都是非法的。只有满足 `s1.max_sum_func_level < s0.max_sum_func_level`，该嵌套聚合才是合法的。
     
--   **in_sum_func**：in_sum_func 指向包含该聚合函数的外层聚合函数。
+-   in_sum_func：in_sum_func 指向包含该聚合函数的外层聚合函数。
     
--   **inner_sum_func_list**：inner_sum_func_list记录着需要在本query block中额外计算的聚合函数。
+-   inner_sum_func_list：inner_sum_func_list记录着需要在本query block中额外计算的聚合函数。
     
--   **检查聚合函数的合法性**  
+-   检查聚合函数的合法性  
     检查聚合函数合法性是在遍历其子表达式的过程中完成的。  
     当我们向下递归遍历子表达式的时候，首先会调用 `init_sum_func_check` 来完成一些变量的初始化，在向上回朔的时候，调用 `check_sum_func` 去验证聚合函数的使用是否合法。check_sum_func 还会将该聚合函数的参数表达式链接起来。
     
@@ -222,7 +220,7 @@ SELECT t1.a FROM t1 GROUP BY t1.a HAVING t1.a IN
 	每个聚合函数都有一个 in_sum_func，如果其不为空，则说明该聚合函数处于另一个聚合函数的参数中。  
 	LEX 结构体中也维护一个同名的变量，维护当前的聚合函数。当遍历表达式的时候，利用 LEX 中的 in_sum_func，就可以为每个聚合函数设置好 in_sum_func.
 
-- max_aggr_level  
+- max_aggr_level:   
 	这个变量的含义在前文中已经解释过了。主要的维护代码位于 "item.cc"，是在对于 Item_field 和 Item_ref 进行 fix_fields 的过程中进行赋值的，计算过程如下所述：  
 	- 最 normal 的case，普通列引用：  
 	列引用 a 处于聚合函数中，并且它的 query block 和 agg 本身属于同一层 query block，那么就会对聚合函数的 max_aggr_level 进行更新（取原有值和列列引用所在 query block 的 nest_level 中较大者）。  
