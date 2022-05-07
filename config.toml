@@ -94,7 +94,15 @@ warning = "⚠️ It has been <i>%d</i> days since the last update, the content 
 
 # https://utteranc.es
 [params.utterances]
-enable = false # whether to enable utterances
+enable = true # whether to enable utterances
 # paste utterances' <script></script> configuration between the triple quotes
 script = """
+<script src="https://utteranc.es/client.js"
+        repo="justlongfei/blog"
+        issue-term="title"
+        label="🔮 utterances"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 """
