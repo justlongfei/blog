@@ -8,9 +8,9 @@
 <h2>Tags</h2>
 <br/>
 <center>
-   {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-   <a class="link" href="{{ "tags/" | relLangURL }}{{ $name | urlize }}">{{ $name | title }}</a>&nbsp; &nbsp;
-   {{ end }}
+   {{- range $.Site.Taxonomies.tags.ByCount -}}
+   <a class="link" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <sup>{{ .Count }}</sup></a>&nbsp; &nbsp;
+   {{- end -}}
 </center>
 </div>
 </main>
