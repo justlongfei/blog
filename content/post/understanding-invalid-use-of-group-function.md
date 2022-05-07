@@ -8,6 +8,8 @@ tags: ["Database", "mysql"]
 这段说明也可以在 mysql 的 docxygen 文档中找到：[Detailed Description](https://dev.mysql.com/doc/dev/mysql-server/latest/classItem__sum.html#details)，
 如果可能，还请参阅 mysql 的官方注释。
 
+<!--more-->
+
 ## 整体设计
 
 ### 聚合函数的合法性
