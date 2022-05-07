@@ -1,7 +1,7 @@
 ---
 title: "My macOS Setup"
 date: 2021-02-02T22:48:52+08:00
-draft: false
+lastMod: 2022-05-07
 tags: ["macos"]
 categories: ["tools"]
 description: "因为使用黑苹果，因此经常需要重新安装系统。本文记录我的`mac`的设置..."

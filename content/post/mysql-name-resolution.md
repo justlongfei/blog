@@ -1,6 +1,7 @@
 ---
 title: "MySQL Name Resolution"
 date: 2022-04-05T10:10:01+08:00
+lastMod: 2022-05-07
 tags: ["Database", "mysql"]
 ---
 

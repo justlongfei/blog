@@ -1,6 +1,7 @@
 ---
 title: "Understanding Invalid Use of Group Function"
 date: 2022-04-06T11:46:13+08:00
+lastMod: 2022-05-07
 tags: ["Database", "mysql"]
 ---
 

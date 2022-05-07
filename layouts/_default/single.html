@@ -24,8 +24,8 @@
     {{ end }}
   </div>
   <span>
-    <b>PublishDate: {{ .PublishDate.Format .Site.Params.dateFormat }}</b> |
-    <b>LastMod: {{ .Lastmod.Format .Site.Params.dateFormat }}</b>
+    <b>PublishDate:</b> <span class="date">{{ .PublishDate.Format .Site.Params.dateFormat }}</span> ~
+    <b>LastMod:</b> <span class="date">{{ .Lastmod.Format .Site.Params.dateFormat }}</span>
   </span>
   {{ end }}
 </br>

@@ -54,6 +54,10 @@ strong {
   color: silver;
 }
 
+.date {
+  color: gray;
+}
+
 #wrapper {
   font-family: 'LXGW WenKai', "Times New Roman", serif;
   background-color: gainsboro;
