@@ -48,7 +48,7 @@ strong {
   width: 1fr;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 660px) {
   .header-nav > nav {
     flex-direction: column;
   }
