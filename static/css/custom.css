@@ -61,9 +61,14 @@ strong {
   padding-right: 30%;
 }
 
+.nav-bar-item {
+  padding-left: 8pt;
+  padding-right: 8pt;
+}
+
 .header-favicon {
-  padding-top: 10pt;
-  padding-left: 10pt;
+  padding-top: 8pt;
+  padding-left: 8pt;
   height: 16pt;
 }
 

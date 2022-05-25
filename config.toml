@@ -66,6 +66,7 @@ Follow me on <a class=link_black href=https://github.com/justlongfei>GitHub</a>,
 <a class=link_black href=https://creativecommons.org/licenses/by-nc-sa/4.0 target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
 """ # notes in the website footer
 keywords = ["blog", "programming"] # website keywords
+headerFavicon = "https://raw.githubusercontent.com/justlongfei/blog/main/static/favicon.ico"
 
 customCSS = ["css/custom.css"]            # path to custom css files, relative to ./static
 customJS = []             # path to custom js files, relative to ./static
