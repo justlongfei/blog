@@ -10,7 +10,7 @@ draft: false
 你也可以在下面这些地方找到我：
 - [Github](https://github.com/justlongfei)
 - [Twitter](https://twitter.com/longfei1bot)
-- <a href="mailto:crlf1w@gmail.com">Email Me</a>  
+- <a href="mailto:longfei1rzz@gmail.com">Email Me</a>  
 
 ## 版权申明
 
